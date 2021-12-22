@@ -1,0 +1,32 @@
+/*
+** Global
+*/
+
+@import 'font';
+@import 'normalize';
+@import 'root';
+@import 'button';
+@import 'input';
+
+
+/*
+** Component
+*/
+
+@import '../component/header/header';
+@import '../component/footer/footer';
+
+@import '../component/homePreview/homePreview';
+@import '../component/homeService/homeService';
+@import '../component/homeQuestion/homeQuestion';
+@import '../component/modalFedback/modalFedback';
+
+@import '../component/call2faPreview/call2faPreview';
+@import '../component/call2faDetails/call2faDetails';
+@import '../component/call2faSlider/call2faSlider';
+@import '../component/call2faVerification/call2faVerification';
+@import '../component/call2faEvidence/call2faEvidence';
+@import '../component/call2faCase/call2faCase';
+@import '../component/call2faOther/call2faOther';
+@import '../component/call2faPrice/call2faPrice';
+@import '../component/call2faAnswer/call2faAnswer';

@@ -1,0 +1,44 @@
+<div class="modal" data-modal-id="form">
+  <div class="modal__inner" data-form-inner>
+    <div class="modal__close">
+      <svg data-modal-close>
+        <use xlink:href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </div>
+    <div class="modal__title">Введите свои контакты<br> для консультации с экспертом</div>
+
+    <form data-form>
+      <div class="modal__input">
+        <input type="text" name="name" placeholder="Имя" maxlength="32">
+        <svg>
+          <use xlink:href="img/sprite/sprite.svg#user"></use>
+        </svg>
+        <span>Пожалуйста, введите свое имя, чтобы мы могли с вами связаться!</span>
+      </div>
+
+      <div class="modal__input">
+        <input id="phone-mask" type="text" name="phone" placeholder="Телефон" maxlength="17">
+        <svg>
+          <use xlink:href="img/sprite/sprite.svg#phone"></use>
+        </svg>
+        <span>Пожалуйста, введите свой номер телефона, чтобы мы могли с вами связаться!</span>
+      </div>
+
+      <div class="modal__input modal__input--mail">
+        <input type="email" name="email" placeholder="E-mail (не обязательно)" autocomplete="off" pattern=".{2,}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" opacity=".5">
+          <path d="M18.593 5.754l-4.203 4.281a.076.076 0 000 .11l2.941 3.133a.507.507 0 01-.359.867.512.512 0 01-.36-.149l-2.929-3.12a.08.08 0 00-.113 0l-.715.726a3.145 3.145 0 01-2.242.945 3.208 3.208 0 01-2.29-.973l-.687-.699a.08.08 0 00-.113 0l-2.93 3.121a.512.512 0 01-.718 0 .505.505 0 010-.718l2.94-3.133a.083.083 0 000-.11L2.61 5.755a.077.077 0 00-.133.054v8.566c0 .688.563 1.25 1.25 1.25h13.75c.688 0 1.25-.562 1.25-1.25V5.81c0-.07-.086-.102-.133-.055z"></path>
+          <path d="M10.601 11.527c.578 0 1.121-.226 1.527-.64l6.13-6.239a1.227 1.227 0 00-.774-.273H3.722a1.22 1.22 0 00-.773.273l6.129 6.239c.402.41.945.64 1.523.64z"></path>
+        </svg>
+      </div>
+
+      <textarea placeholder="Введите сообщение (не обязательно)"></textarea>
+
+      <button type="submit" class="btn small">Отправить</button>
+    </form>
+
+    <div class="modal__complete">
+      <div class="modal__title">Благодарим за заявку!<br> <small>Наш менеджер скоро свяжется с вами для консультации.</small></div>
+    </div>
+  </div>
+</div>

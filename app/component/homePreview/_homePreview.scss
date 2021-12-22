@@ -1,0 +1,241 @@
+.preview {
+  min-height: 100vh;
+  position: relative;
+  @media(min-width: 1920px){
+      height: auto;
+      min-height: auto;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url('../img/bg1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+
+    @media (orientation: portrait) {
+      background-size: cover;
+    }
+
+    @media(orientation: portrait) and (min-width: 768px){
+      background-position: left center;
+    }
+
+    @media(min-width: 1200px){
+        margin-top: -100px;
+        margin-bottom: -100px;
+        background-size: 100% 120%;
+    }
+  }
+
+  & > .container{
+    height: 100vh;
+
+    @media (orientation: landscape) {
+      height: auto;
+      min-height: 100vh;
+    }
+
+    @media(min-width: 960px){
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    @media(min-width: 1920px){
+        height: auto;
+        min-height: auto;
+    }
+  }
+
+  &__inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0 20px;
+    @media(min-width: 768px){
+       padding: 180px 0 20px;
+    }
+  }
+
+  & h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 24px;
+    @media(min-width: 768px){
+      font-size: 36px;
+      line-height: 150%;
+      margin-bottom: 40px;
+    }
+    @media(min-width: 1024px){
+      font-size: 50px;
+      line-height: 150%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__desc{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 60px;
+    padding: 0 10px;
+    text-align: center;
+    @media(min-width: 768px){
+      font-size: 24px;
+      line-height: 150%;
+      margin-bottom: 60px;
+      max-width: 600px;
+    }
+    @media(min-width: 1024px){
+      font-size: 30px;
+      line-height: 150%;
+    }
+  }
+
+  & .btn{
+    margin-bottom: 70px;
+    @media(min-width: 768px){
+      margin-bottom: 120px;
+    }
+  }
+
+  &__slider{
+    width: 100%;
+    overflow:hidden;
+    min-height: 90px;
+
+    & .tns-nav{
+      display: none;
+    }
+
+    & [data-action="stop"],[data-action="start"],{
+      display: none;
+    }
+
+    & .tns-outer{
+      position: relative;
+    }
+
+    & .tns-controls{
+      position: absolute;
+      top: calc(50% - (23px / 2));
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & [data-controls="prev"]{
+      position: relative;
+      color: transparent;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      line-height: 0;
+      font-size: 0;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 13px;
+        height: 23px;
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotateY(180deg);
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        top: 6px;
+        opacity: 0.2;
+        width: 13px;
+        height: 23px;
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotateY(180deg);
+        filter: blur(1px);
+      }
+    }
+
+    & [data-controls="next"]{
+      position: relative;
+      color: transparent;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      line-height: 0;
+      font-size: 0;
+      &:before{
+        content: '';
+        display: block;
+        width: 13px;
+        height: 23px;
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        opacity: 0.2;
+        width: 13px;
+        height: 23px;
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: blur(1px);
+      }
+    }
+
+    & .tns-ovh{
+      width: calc(100% - 50px);
+      margin: 0 auto;
+    }
+
+    & .tns-item{
+      display: flex;
+      align-items: center;
+
+      & svg{
+        display: block;
+      }
+    }
+  }
+}
+
+.slider{
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+
+  &__item--svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+  }
+
+  & svg{
+    width: 100%;
+    display: none;
+  }
+}

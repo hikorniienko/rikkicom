@@ -1,0 +1,122 @@
+.call2faVerification{
+  padding-bottom: 10px;
+  @media(min-width: 768px){
+    padding-bottom: 30px;
+  }
+  @media(min-width: 960px){
+    padding-bottom: 60px;
+  }
+
+  & h2{
+    margin-top: 30px;
+    @media(min-width: 768px){
+      margin-top: 75px;
+    }
+  }
+
+  & .tns-ovh{
+    position: relative;
+    z-index: 2;
+  }
+
+  & .call2faSlider__inner{
+    padding: 0 10%;
+    // margin-left: 90%;
+    // width: 100%;
+    // position: relative;
+    // z-index: 10;
+  }
+  //
+  // & .tns-slide-active .call2faSlider__inner{
+  //   margin: 0!important;
+  //   position: relative;
+  //   z-index: 30;
+  // }
+  //
+  // & .call2faSlider__count, & .call2faSlider__desc{
+  //   opacity: 0;
+  // }
+  //
+  // & .tns-slide-active .call2faSlider__count, & .tns-slide-active .call2faSlider__desc{
+  //   opacity: 1;
+  // }
+  //
+  // & .call2faVerification__slider--video{
+  //   transform: scale(0.9);
+  // }
+  //
+  // & .tns-slide-active .call2faVerification__slider--video{
+  //   transform: none;
+  // }
+  //
+  // & .tns-slide-active ~ .tns-item .call2faSlider__inner{
+  //   padding: 0 10%;
+  //   margin-left: -90%;
+  //   width: 100%;
+  // }
+
+  &__slider{
+
+    &--video{
+      margin-bottom: 30px;
+      border-radius: 8px;
+      filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.24));
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      @media(min-width: 960px){
+        filter: drop-shadow(0px 14px 21px rgba(0, 0, 0, 0.24));
+      }
+
+      &::before{
+        content:'';
+        position: absolute;
+        z-index: 30;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='64' height='65' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M62.6 18.2c-.73-2.76-2.34-5.1-5.1-5.84-5-1.34-25.5-1.47-25.5-1.47s-20.5.13-25.5 1.47c-2.76.73-4.36 3.08-5.1 5.84C.05 23.22 0 33.56 0 33.56S.06 43.9 1.4 48.92c.73 2.76 2.34 5.1 5.1 5.84 5 1.34 25.5 1.47 25.5 1.47s20.5-.13 25.5-1.47c2.76-.73 4.37-3.08 5.1-5.84C63.95 43.9 64 33.56 64 33.56s-.06-10.34-1.4-15.36z' fill='red'/%3E%3Cpath d='M42.67 33.56l-16-9.33v18.66' fill='%23fff'/%3E%3C/svg%3E");
+        background-size: 42px 42px;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        cursor: pointer;
+        @media(min-width: 480px){
+          background-size: 64px 64px;
+        }
+      }
+
+      & > picture{
+        width: 100%;
+        pointer-events: none;
+        display: block;
+
+        & > img{
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: 8px;
+          display: block;
+        }
+      }
+
+      & iframe{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 100;
+      }
+    }
+
+  }
+
+}

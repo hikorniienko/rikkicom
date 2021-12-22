@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+
+    <!-- header -->
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#home" class="logo"><!-- class active -->
+        <span></span>
+        <div class="logo__shadow"></div>
+      </a>
+
+      <nav class="menu">
+        <ul class="menu__header">
+          <li class="menu__header--login"><a href="javascript:void(0)">Личный кабинет</a></li>
+          <li class="menu__header--nav" data-menu-btn>
+            <!-- active -->
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#menu"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#close"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <div class="menu__inner" data-menu-inner>
+          <!-- active -->
+          <ul class="nav" data-nav>
+            <!-- <li><a href="#home" class="active">Главная</a></li> -->
+            <li><a href="#service" class="active">Сервисы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="javascript:void(0)" class="nav__footer">Договор-оферта</a></li>
+            <li><a href="javascript:void(0)" class="nav__footer">API</a></li>
+            <li><a href="javascript:void(0)" class="nav__footer">Политика конфиденциальности</a></li>
+          </ul>
+
+          <ul class="lang">
+            <li><a href="javascript:void(0)">ua</a></li>
+            <li><a href="javascript:void(0)" class="active">ru</a></li>
+            <li><a href="javascript:void(0)">en</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="nav__bg" data-menu-bg></div><!-- active -->
+
+    <!-- header -->
+
+
+    <!-- preview -->
+    <div class="call2faPreview">
+  <div class="container">
+    <div class="call2faPreview__inner">
+      <div class="call2faPreview__target">
+        <img src="img/call2fa/target.png" alt="target">
+        <p>«Цель пользователя — побыстрее начать пользование услугой или приобрести товар, а не длительно проходить верификацию»</p>
+      </div>
+
+      <h1>
+        Упрости, ускорь, удешеви
+        <span>верификацию пользователя с помощью</span>
+        <strong>Call2FA Rikkicom</strong>
+      </h1>
+
+      <button class="btn" data-modal="form">Оставить заявку</button>
+
+      <img class="call2faPreview__hero" src="img/call2fa/hero.png" alt="hero">
+    </div>
+  </div>
+</div>
+
+    <!-- preview -->
+
+
+    <!-- details -->
+    <div class="call2faDetails">
+  <div class="call2faDetails__bg">
+    <div class="container">
+      <div class="call2faDetails__inner">
+
+        <div class="call2faDetails__items">
+          <div class="call2faDetails__item">
+            <img src="img/call2fa/icon_png/1.png" alt="icon">
+            <h3>Стоимость</h3>
+            <p>в 2-4 раза дешевле SMS или Viber (10-15 коп. за 1 вер-цию)</p>
+          </div>
+
+          <div class="call2faDetails__item">
+            <img src="img/call2fa/icon_png/2.png" alt="icon">
+            <h3>Скорость и гарантия</h3>
+            <p>звонок приходит всегда и быстрее, чем СМС</p>
+          </div>
+
+          <div class="call2faDetails__item">
+            <img src="img/call2fa/icon_png/3.png" alt="icon">
+            <h3>Доступность</h3>
+            <p>мессенджеры и банкингы есть не у всех, а номер - у всех</p>
+          </div>
+
+          <div class="call2faDetails__item">
+            <img src="img/call2fa/icon_png/4.png" alt="icon">
+            <h3>Безопасность</h3>
+            <p>защита от спам атак и сервисов по генерации смс</p>
+          </div>
+
+          <div class="call2faDetails__item">
+            <img src="img/call2fa/icon_png/5.png" alt="icon">
+            <h3>Удобство</h3>
+            <p>автоматическое заполнение цифр или нажатие на кнопку 1</p>
+          </div>
+
+          <div class="call2faDetails__item">
+            <img src="img/call2fa/icon_png/6.png" alt="icon">
+            <h3>Рост конверсии</h3>
+            <p>на 10-20% от попыток входа до авторизации за счет простоты</p>
+          </div>
+        </div>
+
+        <a href="#details" class="call2faDetails__arrow">
+          <svg>
+            <use xlink:href="img/call2fa/sprite/sprite.svg#scroll_just_pointer"></use>
+          </svg>
+        </a>
+
+        <section class="call2faDetails__road" id="details">
+          <h2><span>Что такое</span> “Call2FA” <small>или авторизация по звонку?</small></h2>
+          <p>Верификация (аутентификация, авторизация) по номеру телефона на данный момент — самый распространенный способ подтверждения контактных данных пользователей любых интернет-сервисов, мобильных приложений.</p>
+
+          <div class="call2faDetails__road--inner">
+            <div class="call2faDetails__road--item">
+              <div class="call2faDetails__road--item--img">
+                <img src="img/call2fa/block_login_ru.png" alt="img login">
+              </div>
+              <div class="call2faDetails__road--item--list">
+                <strong>Форма для:</strong>
+                <ol>
+                  <li>вход / регистрация</li>
+                  <li>забыли пароль / смена номера в лк</li>
+                  <li>подтверждающие действия (подпись, оплата, перевод средств, списание бонусов)</li>
+                  <li>другое</li>
+                </ol>
+              </div>
+              <div class="call2faDetails__road--item--arrow">
+                <div class="call2faDetails__road--item--arrow--img">
+                  <img src="img/call2fa/arrow.png" alt="img arrow">
+                </div>
+                <span>Входящий звонок</span>
+              </div>
+            </div>
+
+            <img src="img/call2fa/block_iphone_ru.png" alt="img iphone">
+
+            <div class="call2faDetails__road--item">
+              <div class="call2faDetails__road--item--arrow call2faDetails__road--item--arrow--two">
+                <div class="call2faDetails__road--item--arrow--img">
+                  <img src="img/call2fa/arrow.png" alt="img arrow">
+                </div>
+                <span>Верификация (4 типа)</span>
+              </div>
+              <div class="call2faDetails__road--item--img">
+                <img src="img/call2fa/block_complite_ru.png" alt="img complite">
+              </div>
+              <div class="call2faDetails__road--item--list call2faDetails__road--item--list--two">
+                <strong>4 типа верификации:</strong>
+                <ol>
+                  <li>подтверждение входа нажатием на 1</li>
+                  <li>ввод последних 4 цифр</li>
+                  <li>ввод надиктованного кода</li>
+                  <li>ответ да/нет</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- details -->
+
+
+    <!-- verification -->
+    <!-- Контент слайдера в js-->
+
+<section class="call2faVerification">
+  <div class="container">
+    <div class="call2faVerification__inner">
+      <h2><span>Типы верификации</span> <small>видео в действии</small></h2>
+
+      <div class="call2faSlider">
+        <div class="call2faVerification__slider">
+
+        </div>
+
+        <div class="call2faSlider__control" id="customize-controls">
+          <div class="prev" aria-controls="customize" tabindex="-1" data-controls="prev"></div>
+          <div class="next" aria-controls="customize" tabindex="-1" data-controls="next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- verification -->
+
+
+    <!-- evidence -->
+    <section class="call2faEvidence">
+  <div class="container">
+    <div class="call2faEvidence__inner">
+      <h2>
+        <span>10 доказательств</span>
+        <small>почему Rikkicom - лучшее решение</small>
+      </h2>
+
+      <div class="call2faEvidence__item--inner">
+
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#1"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/7.png" alt="image">
+          </div>
+
+          <h4>Номера под клиента</h4>
+          <p>номера используются не из общего пула, а для каждого клиента свои</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#2"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/8.png" alt="image">
+          </div>
+
+          <h4>Надежность</h4>
+          <p>1 клиент = 3 оператора, 2 базы данных, 3 гео разнесенных кластерных сервера</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#3"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/9.png" alt="image">
+          </div>
+
+          <h4>Экономия</h4>
+          <p>в зависимости от объема верификаций стоимость верификации уменьшается</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#4"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/10.png" alt="image">
+          </div>
+
+          <h4>Скорость</h4>
+          <p>среднее время верификации пользователя через сервис Rikkicom 8 секунд</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#5"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/11.png" alt="image">
+          </div>
+
+          <h4>Кабинет со статистикой</h4>
+          <p>компания получает доступ к статистике по верификации</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#6"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/12.png" alt="image">
+          </div>
+
+          <h4>API и SDK</h4>
+          <p>удобный API и помощь в интеграции, также упрощенное API для 1С</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#7"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/13.png" alt="image">
+          </div>
+
+          <h4>7 лет опыта </h4>
+          <p>только качественный сервис для клиента и накопленные нами знания</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#8"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/14.png" alt="image">
+          </div>
+
+          <h4>Что-то пошло не так</h4>
+          <p>система сигнализирует при странном поведении сервиса</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#9"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/15.png" alt="image">
+          </div>
+
+          <h4>65 стран мира</h4>
+          <p>мы не ограничиваемся территорией нашей страны, мы открыты для всего мира</p>
+        </div>
+
+        <div class="call2faEvidence__item">
+          <div class="call2faEvidence__item--img">
+            <svg>
+              <use xlink:href="img/call2fa/sprite/sprite.svg#10"></use>
+            </svg>
+            <img src="img/call2fa/icon_png/16.png" alt="image">
+          </div>
+
+          <h4>Мы из Украины</h4>
+          <p>мы - украинцы, наши сервера находятся в стране клиента </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- evidence -->
+
+
+    <!-- case -->
+    <section class="call2faCase">
+  <div class="container">
+    <div class="call2faCase__inner">
+      <h2><span>Реальные цифры</span> <small>реальных кейсов</small></h2>
+
+      <div class="call2faSlider">
+        <div class="call2faCase__slider">
+
+          <div class="call2faSlider__item">
+            <div class="call2faSlider__inner">
+              <div class="call2faSlider__count">
+                <span>1</span>/5
+              </div>
+
+              <div class="call2faCase__item">
+                <div class="call2faCase__item--img1">
+                  <img src="img/call2fa/slider/pills.png" alt="image1">
+                </div>
+                <div class="call2faCase__item--left">
+                  <strong>МИС (мед. информ. система)</strong>
+                  <ul>
+                    <li>Сэкономили больше 3 раз (220 000 грн/мес)</li>
+                    <li>SMS у клиента осталось как резерв</li>
+                    <li>Выбор звонка 90%, выбор СМС 10% — статистика клиента</li>
+                  </ul>
+                </div>
+                <div class="call2faCase__item--right">
+                  <p>
+                    <strong>Использовали:</strong>
+                    верификацию SMS для входа, регистрации смены номера и подтверждения записи к врачу.
+                    Стоимость SMS = 32 коп. за запрос
+                    1 000 000 запросов в месяц <b>= 320 000 грн.</b>
+                  </p>
+
+                  <p>
+                    <strong>Подключили::</strong>
+                    верификацию звонком.
+                    Стоимость = 10 коп. за запрос
+                    1 000 000 запросов в месяц <b>= 100 000 грн</b>
+                  </p>
+                </div>
+                <div class="call2faCase__item--img2">
+                  <img  src="img/call2fa/slider/vaccine.png" alt="image2">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="call2faSlider__item">
+            <div class="call2faSlider__inner">
+              <div class="call2faSlider__count">
+                <span>2</span>/5
+              </div>
+
+              <div class="call2faCase__item">
+                <div class="call2faCase__item--img1">
+                  <img src="img/call2fa/slider/money.png" alt="image1">
+                </div>
+                <div class="call2faCase__item--left">
+                  <strong>Платежная система</strong>
+                  <ul>
+                    <li>Сэкономили больше 2 раз (57 000 грн/мес)</li>
+                  </ul>
+                </div>
+                <div class="call2faCase__item--right">
+                  <p>
+                    <strong>Использовали:</strong>
+                    верификацию SMS для перевода средств.
+                    Стоимость SMS = 34 коп. за запрос
+                    300 0000 запросов в месяц <b>= 102 000 грн.</b>
+                  </p>
+
+                  <p>
+                    <strong>Подключили::</strong>
+                    верификацию звонком.
+                    Стоимость = 15 коп. за запрос
+                    300 000 запросов в месяц <b>= 45 000 грн</b>
+                  </p>
+                </div>
+                <div class="call2faCase__item--img2">
+                  <img  src="img/call2fa/slider/hand.png" alt="image2">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="call2faSlider__item">
+            <div class="call2faSlider__inner">
+              <div class="call2faSlider__count">
+                <span>3</span>/5
+              </div>
+
+              <div class="call2faCase__item">
+                <div class="call2faCase__item--img1">
+                  <img src="img/call2fa/slider/flower.png" alt="image1">
+                </div>
+                <div class="call2faCase__item--left">
+                  <strong>Микрокредитование</strong>
+                  <ul>
+                    <li>Сэкономили больше 2 раз (34 000 грн/мес)</li>
+                    <li>SMS у клиента осталось как резерв</li>
+                  </ul>
+                </div>
+                <div class="call2faCase__item--right">
+                  <p>
+                    <strong>Использовали:</strong>
+                    верификацию SMS для входа, регистрации, восстановления пароля, подписи договора.
+                    Стоимость SMS = 32 коп. за запрос
+                    200 0000 запросов в месяц <b>= 64 000 грн.</b>
+                  </p>
+
+                  <p>
+                    <strong>Подключили::</strong>
+                    верификацию звонком.
+                    Стоимость = 15 коп. за запрос
+                    200 000 запросов в месяц <b>= 30 000 грн</b>
+                  </p>
+                </div>
+                <div class="call2faCase__item--img2">
+                  <img  src="img/call2fa/slider/car.png" alt="image2">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="call2faSlider__item">
+            <div class="call2faSlider__inner">
+              <div class="call2faSlider__count">
+                <span>4</span>/5
+              </div>
+
+              <div class="call2faCase__item">
+                <div class="call2faCase__item--img1">
+                  <img src="img/call2fa/slider/card.png" alt="image1">
+                </div>
+                <div class="call2faCase__item--left">
+                  <strong>Супермаркет</strong>
+                  <ul>
+                    <li>Сэкономили больше 2 раз (45 000 грн/мес)</li>
+                  </ul>
+                </div>
+                <div class="call2faCase__item--right">
+                  <p>
+                    <strong>Использовали:</strong>
+                    верификацию SMS для программы лояльности.
+                    Стоимость SMS = 33 коп. за запрос
+                    250 0000 запросов в месяц <b>= 82 500 грн.</b>
+                  </p>
+
+                  <p>
+                    <strong>Подключили::</strong>
+                    верификацию звонком.
+                    Стоимость = 15 коп. за запрос
+                    250 000 запросов в месяц <b>= 37 500 грн</b>
+                  </p>
+                </div>
+                <div class="call2faCase__item--img2">
+                  <img  src="img/call2fa/slider/cart.png" alt="image2">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="call2faSlider__item">
+            <div class="call2faSlider__inner">
+              <div class="call2faSlider__count">
+                <span>5</span>/5
+              </div>
+
+              <div class="call2faCase__item">
+                <div class="call2faCase__item--img1">
+                  <img src="img/call2fa/slider/fueling.png" alt="image1">
+                </div>
+                <div class="call2faCase__item--left">
+                  <strong>АЗС</strong>
+                  <ul>
+                    <li>Сэкономили больше 2 раз (79 900 грн/мес)</li>
+                  </ul>
+                </div>
+                <div class="call2faCase__item--right">
+                  <p>
+                    <strong>Использовали:</strong>
+                    верификацию SMS для программы лояльности, вход в кабинет, смены номера.
+                    Стоимость SMS = 32 коп. за запрос
+                    470 0000 запросов в месяц <b>= 150 400 грн.</b>
+                  </p>
+
+                  <p>
+                    <strong>Подключили::</strong>
+                    верификацию звонком.
+                    Стоимость = 15 коп. за запрос
+                    470 000 запросов в месяц <b>= 70 500 грн</b>
+                  </p>
+                </div>
+                <div class="call2faCase__item--img2">
+                  <img  src="img/call2fa/slider/canister.png" alt="image2">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- case -->
+
+
+    <!-- other -->
+    <section class="call2faOther">
+  <div class="container">
+    <div class="call2faOther__inner">
+      <h2><span>Кому ещё будет полезно</span> <small>заказать услугу авторизации по звонку</small></h2>
+
+      <div class="call2faOther__scroll">
+        <div class="call2faOther__scroll--inner">
+          <div class="call2faOther__item">
+            <img src="img/call2fa/icon_png/17.png" alt="image">
+            <h4>Программам лояльности</h4>
+            <p>(Бонус плюс, COLO, Власний рахунок, Panorama Club, Fishka)</p>
+          </div>
+
+          <div class="call2faOther__item">
+            <img src="img/call2fa/icon_png/18.png" alt="image">
+            <h4>Разработчикам ПО</h4>
+            <p>(DotsPlatform, Wezom, SoftServe)</p>
+          </div>
+
+          <div class="call2faOther__item">
+            <img src="img/call2fa/icon_png/19.png" alt="image">
+            <h4>Банкам, финансовым и кредитным учреждениям</h4>
+            <p>(Микрокредиты, Privat24, Monobank, Манивео, Dinero, ZeCredit)</p>
+          </div>
+
+          <div class="call2faOther__item">
+            <img src="img/call2fa/icon_png/17.png" alt="image">
+            <h4>Программам лояльности</h4>
+            <p>(Бонус плюс, COLO, Власний рахунок, Panorama Club, Fishka)</p>
+          </div>
+
+          <div class="call2faOther__item">
+            <img src="img/call2fa/icon_png/18.png" alt="image">
+            <h4>Разработчикам ПО</h4>
+            <p>(DotsPlatform, Wezom, SoftServe)</p>
+          </div>
+
+          <div class="call2faOther__item">
+            <img src="img/call2fa/icon_png/19.png" alt="image">
+            <h4>Банкам, финансовым и кредитным учреждениям</h4>
+            <p>(Микрокредиты, Privat24, Monobank, Манивео, Dinero, ZeCredit)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- other -->
+
+
+    <!-- price -->
+    <section class="call2faPrice">
+  <div class="container">
+    <div class="call2faPrice__inner">
+      <img class="call2faPrice__img" src="img/call2fa/price.png" alt="price">
+      <h2>
+        <span>Стоимость</span> <small>услуги авторизации по звонку</small>
+      </h2>
+
+      <div class="call2faPrice__table">
+        <div class="call2faPrice__table--row">
+            <div class="call2faPrice__table--col">Цена одной авторизации, грн.</div>
+            <div class="call2faPrice__table--col">0,15</div>
+            <div class="call2faPrice__table--col">0,14</div>
+            <div class="call2faPrice__table--col">0,13</div>
+            <div class="call2faPrice__table--col">0,12</div>
+            <div class="call2faPrice__table--col">0,11</div>
+            <div class="call2faPrice__table--col">0,10</div>
+        </div>
+        <div class="call2faPrice__table--row">
+          <div class="call2faPrice__table--col">Количество авторизаций в месяц, тыс.</div>
+          <div class="call2faPrice__table--col">< 500</div>
+          <div class="call2faPrice__table--col">500 - 600</div>
+          <div class="call2faPrice__table--col">600 - 700</div>
+          <div class="call2faPrice__table--col">700 - 800</div>
+          <div class="call2faPrice__table--col">800 - 900</div>
+          <div class="call2faPrice__table--col">> 900</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- price -->
+
+
+    <!-- answer -->
+    <section class="call2faAnswer">
+  <div class="container">
+    <div class="call2faAnswer__inner">
+      <div class="call2faAnswer__answer">
+        <h2><span>чаво:</span></h2>
+
+        <details>
+          <summary>1. Какая скорость от нажатия кнопки до получения звонка?</summary>
+          <p>Something small enough to escape casual notice.</p>
+        </details>
+
+        <details>
+          <summary>2. Если ложится сервер, то звонок не приходит?</summary>
+          <p>Something small enough to escape casual notice.</p>
+        </details>
+
+        <details>
+          <summary>3.  Какие есть условия по голосовому сообщению? </summary>
+          <p>Something small enough to escape casual notice.</p>
+        </details>
+      </div>
+
+      <div class="call2faAnswer__form">
+          <h4>Получить консультацию</h4>
+          <form data-form-footer>
+            <div class="input">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#user"></use>
+              </svg>
+              <input type="text" name="name" placeholder="Имя">
+            </div>
+
+            <div class="input">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#phone"></use>
+              </svg>
+              <input id="phone-mask-footer" type="text" name="phone" placeholder="Телефон" maxlength="17">
+            </div>
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- answer -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__section_1">
+        <div class="footer__logo"></div>
+        <div class="footer__copy">
+          © 2021 Rikkicom, Inc.
+        </div>
+      </div>
+
+      <div class="footer__section_2">
+        <div class="footer__contact"><a href="javascript:void(0)">+38 (044) 331-21-23</a></div>
+        <div class="footer__contact"><a href="javascript:void(0)">sales@rikkicom.io</a></div>
+      </div>
+
+      <div class="footer__section_3">
+        <div class="footer__social">
+          <a href="javascript:void(0)">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+          <a href="javascript:void(0)">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="footer__menu">
+          <li><a href="javascript:void(0)">Договор-оферта</a></li>
+          <li><a href="javascript:void(0)">API</a></li>
+          <li><a href="javascript:void(0)">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    <!-- footer -->
+
+  </div>
+
+
+  <!-- modal -->
+  <div class="modal" data-modal-id="form">
+  <div class="modal__inner" data-form-inner>
+    <div class="modal__close">
+      <svg data-modal-close>
+        <use xlink:href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </div>
+    <div class="modal__title">Введите свои контакты<br> для консультации с экспертом</div>
+
+    <form data-form>
+      <div class="modal__input">
+        <input type="text" name="name" placeholder="Имя" maxlength="32">
+        <svg>
+          <use xlink:href="img/sprite/sprite.svg#user"></use>
+        </svg>
+        <span>Пожалуйста, введите свое имя, чтобы мы могли с вами связаться!</span>
+      </div>
+
+      <div class="modal__input">
+        <input id="phone-mask" type="text" name="phone" placeholder="Телефон" maxlength="17">
+        <svg>
+          <use xlink:href="img/sprite/sprite.svg#phone"></use>
+        </svg>
+        <span>Пожалуйста, введите свой номер телефона, чтобы мы могли с вами связаться!</span>
+      </div>
+
+      <div class="modal__input modal__input--mail">
+        <input type="email" name="email" placeholder="E-mail (не обязательно)" autocomplete="off" pattern=".{2,}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" opacity=".5">
+          <path d="M18.593 5.754l-4.203 4.281a.076.076 0 000 .11l2.941 3.133a.507.507 0 01-.359.867.512.512 0 01-.36-.149l-2.929-3.12a.08.08 0 00-.113 0l-.715.726a3.145 3.145 0 01-2.242.945 3.208 3.208 0 01-2.29-.973l-.687-.699a.08.08 0 00-.113 0l-2.93 3.121a.512.512 0 01-.718 0 .505.505 0 010-.718l2.94-3.133a.083.083 0 000-.11L2.61 5.755a.077.077 0 00-.133.054v8.566c0 .688.563 1.25 1.25 1.25h13.75c.688 0 1.25-.562 1.25-1.25V5.81c0-.07-.086-.102-.133-.055z"></path>
+          <path d="M10.601 11.527c.578 0 1.121-.226 1.527-.64l6.13-6.239a1.227 1.227 0 00-.774-.273H3.722a1.22 1.22 0 00-.773.273l6.129 6.239c.402.41.945.64 1.523.64z"></path>
+        </svg>
+      </div>
+
+      <textarea placeholder="Введите сообщение (не обязательно)"></textarea>
+
+      <button type="submit" class="btn small">Отправить</button>
+    </form>
+
+    <div class="modal__complete">
+      <div class="modal__title">Благодарим за заявку!<br> <small>Наш менеджер скоро свяжется с вами для консультации.</small></div>
+    </div>
+  </div>
+</div>
+
+  <!-- modal -->
+
+  <script src="js/plugin/smooth-scroll.min.js"></script>
+  <script src="js/plugin/tiny-slider.min.js"></script>
+  <script src="js/plugin/imask.min.js"></script>
+  <script src="js/main.bundle.js"></script>
+  <script src="js/call2fa.bundle.js"></script>
+</body>
+
+</html>

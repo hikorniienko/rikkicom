@@ -1,0 +1,86 @@
+.question{
+  position: relative;
+  padding: 60px 0 70px;
+  @media(min-width: 768px){
+    padding: 105px 0 110px;
+  }
+  @media(min-width: 1024px){
+    padding: 150px 0 130px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url('../img/bg2.svg');
+    background-repeat: no-repeat;
+    // background-size: 120% 120%;
+    background-position: right center;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    margin-top: -50px;
+
+
+    @media(orientation: portrait) and (min-width: 768px){
+      background-position: right center;
+    }
+
+
+    @media(min-width: 768px){
+      background-size: 140% 160%;
+      background-position: center center;
+    }
+
+    @media(min-width: 1200px){
+      background-size: 100% 160%;
+      background-position: center center;
+    }
+  }
+
+  & h4{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+    @media(min-width: 480px){
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    @media(min-width: 768px){
+      font-size: 36px;
+    }
+    @media(min-width: 1024px){
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__desc{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 28px;
+    @media(min-width: 480px){
+      font-size: 18px;
+      margin-bottom: 48px;
+    }
+    @media(min-width: 768px){
+      font-size: 24px;
+      margin-bottom: 68px;
+    }
+    @media(min-width: 1024px){
+      font-size: 30px;
+      margin-bottom: 75px;
+    }
+  }
+
+  & .btn{
+    margin: 0 auto;
+  }
+}

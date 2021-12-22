@@ -1,0 +1,61 @@
+.input{
+  position: relative;
+  margin-bottom: 16px;
+  @media(min-width: 480px){
+
+  }
+  @media(min-width: 1024px){
+
+  }
+
+  & svg{
+    position:absolute;
+    pointer-events: none;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    @media(min-width: 768px){
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      margin-left: 5px;
+    }
+  }
+
+  & input{
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    border-radius: 6px;
+    outline: 0;
+    border: 1px solid #FF7403;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0 20px 0 30px;
+    box-shadow: 0 0 2px 2px rgba(255, 116, 3, 0.2);
+    @media(min-width: 768px){
+      font-size: 18px;
+      line-height: 40px;
+      padding: 0 20px 0 50px;
+    }
+
+    &::placeholder{
+      color: #696871;
+    }
+
+    &:focus{
+      border: 1px solid rgba(200, 111, 229, 1);
+      box-shadow: 0 0 2px 2px rgba(200, 111, 229, 0.2);
+    }
+
+    &.invalid {
+      border: 2px solid #fd3601;
+
+      & ~ span{
+        @media(min-width: 768px){
+          display: block;
+        }
+      }
+    }
+  }
+}

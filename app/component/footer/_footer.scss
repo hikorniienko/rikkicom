@@ -1,0 +1,137 @@
+.footer {
+  background: #F3F5FF;
+  padding: 18px 0;
+
+  &__inner{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  &__section_1, &__section_2, &__section_3{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+
+  &__section_2{
+    @media(min-width: 480px){
+      order: 1;
+    }
+  }
+
+  &__section_3{
+    @media(min-width: 480px){
+      justify-content:center;
+    }
+    @media(min-width: 768px){
+      justify-content:space-between;
+    }
+  }
+
+  &__logo{
+    position: relative;
+    width: 81px;
+    height: 28px;
+    @media(min-width: 1024px){
+      width: 126px;
+      height: 40px;
+    }
+
+    &::before{
+      content: '';
+      width: 81px;
+      height: 24px;
+      background-image: url('../img/logo.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @media(min-width: 1024px){
+        width: 126px;
+        height: 26px;
+      }
+    }
+  }
+
+  &__copy{
+    font-size: 12px;
+    line-height: 28px;
+    color: #696871;
+    @media(min-width: 1024px){
+      font-size: 14px;
+      line-height: 40px;
+    }
+  }
+
+  &__contact{
+    text-align: right;
+    & a{
+      font-size: 12px;
+      line-height: 28px;
+      color: #696871;
+      text-decoration: none;
+      @media(min-width: 1024px){
+        font-size: 14px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__social{
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 480px){
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    & a {
+      display: flex;
+      align-items: center;
+      height: 28px;
+      @media(min-width: 1024px){
+        height: 40px;
+      }
+    }
+
+    & svg{
+      width: 18px;
+      height: 18px;
+      margin: 5px 0;
+      @media(min-width: 480px){
+        margin:  0 12px;
+      }
+      @media(min-width: 1024px){
+        width: 24px;
+        height: 24px;
+        margin:  0 16px;
+      }
+    }
+  }
+
+  &__menu{
+    display: none;
+
+    @media(min-width: 768px){
+      display: flex;
+    }
+
+    & li{
+      list-style-type: none;
+      margin: 0 20px;
+
+      & a{
+        font-size: 12px;
+        line-height: 28px;
+        color: #696871;
+        text-decoration: none;
+        @media(min-width: 1024px){
+          font-size: 14px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
